@@ -300,10 +300,9 @@ class DownloadNotification {
             return "";
         }
         long progress = currentBytes * 100 / totalBytes;
-        StringBuilder sb = new StringBuilder();
-        sb.append(progress);
-        sb.append('%');
-        return sb.toString();
+        return String.format(mContext.getResources()
+                                     .getString(R.string.downloading_text_template),
+                             progress);
     }
     
 }

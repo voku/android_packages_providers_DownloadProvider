@@ -100,5 +100,7 @@
         application, a content marketplace. -->
     <string name="notification_download_failed">بارگیری ناموفق بود</string>
 
+    <!-- Template of progress string shown in ongoing section of notification -->
+    <string name="downloading_text_template">٪%Ld</string>
 
 </resources>
