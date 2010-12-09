@@ -16,22 +16,20 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- This is the name of the Download Manager application. -->
-    <string name="app_label">مدیر بارگیری‌ها</string>
+    <string name="app_label">مدیریت دریافت</string>
 
     <!-- This is the short description of a permission associated with the
         Android Download Manager. It is displayed as part of the description
         of any application that was granted that permission.
         This specific permission controls access to the Download Manager by
         applications that initiate downloads. -->
-    <string name="permlab_downloadManager">دسترسی به مدیر بارگیری‌ها.</string>
+    <string name="permlab_downloadManager">دسترسی به مدیریت دریافت</string>
     <!-- This is the long description of a permission associated with the
         Android Download Manager. It is displayed as part of the description
         of any application that was granted that permission.
         This specific permission controls access to the Download Manager by
         applications that initiate downloads. -->
-    <string name="permdesc_downloadManager">به برنامه جازه می‌دهد که
-	به مدیر بارگیری‌ها دسترسی داشته باشد و از آن برای بارگیری پرونده‌ها استفاده کند.
-	برنامه‌های خرابکار می‌توانند از این برای قطع بارگیری‌ها و دسترسی به اطلاعات شخصی استفاده کنند..</string>
+    <string name="permdesc_downloadManager">اجازهٔ دسترسی به برنامهٔ مدیریت دریافت و استفاده از آن برای دریافت پرونده‌ها. برنامه‌های مخرب با این مجوز می‌توانند دریافت‌ها را مختل و به اطلاعات خصوصی دسترسی پیدا کنند.</string>
 
     <!-- This is the short description of a permission associated with the
         Android Download Manager. It is displayed as part of the description
@@ -40,7 +38,7 @@
         dangerous) features from the Download Manager that are needed by
         system applications but aren't necessary for regular applications
         that just initiate plain downloads. -->
-    <string name="permlab_downloadManagerAdvanced">توابع پیشرفتهٔ مدیر بارگیری‌ها.</string>
+    <string name="permlab_downloadManagerAdvanced">کارکردهای پیشرفتهٔ برنامهٔ مدیریت دریافت</string>
     <!-- This is the long description of a permission associated with the
         Android Download Manager. It is displayed as part of the description
         of any application that was granted that permission.
@@ -48,23 +46,20 @@
         dangerous) features from the Download Manager that are needed by
         system applications but aren't necessary for regular applications
         that just initiate plain downloads. -->
-    <string name="permdesc_downloadManagerAdvanced">به برنامه اجازه می‌دهد که
-	به توابع پیشرفتهٔ مدیر بارگیری‌ها دسترسی داشته باشد.
-	برنامه‌های خرابکار می‌توانند از این برای قطع بارگیری‌ها و دسترسی به اطلاعات شخصی استفاده کنند.</string>
+    <string name="permdesc_downloadManagerAdvanced">اجازهٔ دسترسی به کارکردهای پیشرفتهٔ برنامهٔ مدیریت دریافت. برنامه‌های مخرب با این مجوز می‌توانند دریافت‌ها را مختل و به اطلاعات خصوصی دسترسی پیدا کنند.</string>
 
-    <string name="permlab_downloadCompletedIntent">ارسال اطلاع‌های بارگیری.</string>
+    <string name="permlab_downloadCompletedIntent">ارسال خبر دریافت</string>
     <!-- This is the long description of a permission associated with the
         Android Download Manager. It is displayed as part of the description
         of any application that was granted that permission.
         This specific permission allows an application to tell other
         applications that their downloads have completed. -->
-    <string name="permdesc_downloadCompletedIntent">به برنامه اجازه می‌دهد که
-	در مورد بارگیری‌های به اتمام رسیده اطلاع ارسال کنید. برنامه‌های خرابکار می‌توانند از این برای گیج کردن برنامه‌های دیگر در حال بارگیری، استفاده کنند.</string>
+    <string name="permdesc_downloadCompletedIntent">اجازهٔ ارسال خبر دربارهٔ دریافت یک پرونده. برنامه‌های مخرب با این مجوز می‌توانند باعث اختلال در کار برنامه‌های دیگر شوند.</string>
 
     <!-- Title for permission to see all downloads to EXTERNAL -->
-    <string name="permlab_seeAllExternal">مشاهدهٔ همهٔ بارگیری‌های کارت حافظه</string>
+    <string name="permlab_seeAllExternal">دسترسی به همهٔ دریافت‌های ذخیره‌شده در کارت حافظه</string>
     <!-- Description for the permission to see all downloads to EXTERNAL -->
-    <string name="permdesc_seeAllExternal">به برنامه اجازه می‌دهد که همهٔ بارگیری‌های کارت حافظه، صرفنظر از اینکه چه برنامه‌ای آنرا بارگیری کرده است، را مشاهده کند.</string>
+    <string name="permdesc_seeAllExternal">اجازهٔ دسترسی به همهٔ دریافت‌های ذخیره‌شده در کارت حافظه</string>
     <!-- This is the title that is used when displaying the notification
     for a download that doesn't have a title associated with it. -->
     <string name="download_unknown_title">&lt;بدون عنوان&gt;</string>
@@ -84,23 +79,23 @@
         downloads beyond the first two, i.e. "[title], [title] and [n] more".
         This is the " and [n] more" part, including the leading space, and it's
         used regardless of the number of additional downloads. -->
-    <string name="notification_filename_extras">" و <xliff:g id="number" example="27">%d</xliff:g> دیگر"</string>
+    <string name="notification_filename_extras">و <xliff:g id="number" example="27">%Ld</xliff:g> دیگر</string>
 
     <!-- When a download completes, a notification is displayed, and this
         string is used to indicate that the download successfully completed.
         Note that such a download could have been initiated by a variety of
         applications, including (but not limited to) the browser, an email
         application, a content marketplace. -->
-    <string name="notification_download_complete">بارگیری به اتمام رسید</string>
+    <string name="notification_download_complete">دریافت شد.</string>
 
     <!-- When a download completes, a notification is displayed, and this
         string is used to indicate that the download failed.
         Note that such a download could have been initiated by a variety of
         applications, including (but not limited to) the browser, an email
         application, a content marketplace. -->
-    <string name="notification_download_failed">بارگیری ناموفق بود</string>
+    <string name="notification_download_failed">دریافت نشد.</string>
 
     <!-- Template of progress string shown in ongoing section of notification -->
-    <string name="downloading_text_template">٪%Ld</string>
+    <string name="downloading_text_template">%Ld٪</string>
 
 </resources>
