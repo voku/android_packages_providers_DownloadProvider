@@ -103,7 +103,7 @@ public class DownloadAdapter extends CursorAdapter {
         retrieveAndSetIcon(convertView);
 
         String title = mCursor.getString(mTitleColumnId);
-        if (title.isEmpty()) {
+        if (title == "") {
             title = mResources.getString(R.string.missing_title);
         }
         setTextForView(convertView, R.id.download_title, title);

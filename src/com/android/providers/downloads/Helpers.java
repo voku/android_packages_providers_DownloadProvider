@@ -510,7 +510,7 @@ public class Helpers {
      */
     public static void validateSelection(String selection, Set<String> allowedColumns) {
         try {
-            if (selection == null || selection.isEmpty()) {
+            if (selection == null || selection == "") {
                 return;
             }
             Lexer lexer = new Lexer(selection, allowedColumns);

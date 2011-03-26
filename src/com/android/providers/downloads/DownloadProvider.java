@@ -157,7 +157,7 @@ public final class DownloadProvider extends ContentProvider {
         public List<String> mParameters = new ArrayList<String>();
 
         public <T> void appendClause(String newClause, final T... parameters) {
-            if (newClause == null || newClause.isEmpty()) {
+            if (newClause == null || newClause == "") {
                 return;
             }
             if (mWhereClause.length() != 0) {
@@ -907,7 +907,7 @@ public final class DownloadProvider extends ContentProvider {
             if (filename != null) {
                 Cursor c = query(uri, new String[]
                         { Downloads.Impl.COLUMN_TITLE }, null, null, null);
-                if (!c.moveToFirst() || c.getString(0).isEmpty()) {
+                if (!c.moveToFirst() || c.getString(0) == "") {
                     values.put(Downloads.Impl.COLUMN_TITLE, new File(filename).getName());
                 }
                 c.close();
