@@ -95,7 +95,7 @@ public class SizeLimitActivity extends Activity
         boolean isWifiRequired =
             mCurrentIntent.getExtras().getBoolean(DownloadInfo.EXTRA_IS_WIFI_REQUIRED);
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, AlertDialog.THEME_HOLO_DARK);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
         if (isWifiRequired) {
             builder.setTitle(R.string.wifi_required_title)
                     .setMessage(getString(R.string.wifi_required_body, sizeString, queueText))

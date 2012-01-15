@@ -1,6 +1,5 @@
 package com.android.providers.downloads;
 
-import android.app.DownloadManager;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Context;
@@ -64,12 +63,22 @@ class RealSystemFacade implements SystemFacade {
     }
 
     public Long getMaxBytesOverMobile() {
-        return DownloadManager.getMaxBytesOverMobile(mContext);
+        try {
+            return Settings.Secure.getLong(mContext.getContentResolver(),
+                    Settings.Secure.DOWNLOAD_MAX_BYTES_OVER_MOBILE);
+        } catch (SettingNotFoundException exc) {
+            return null;
+        }
     }
 
     @Override
     public Long getRecommendedMaxBytesOverMobile() {
-        return DownloadManager.getRecommendedMaxBytesOverMobile(mContext);
+        try {
+            return Settings.Secure.getLong(mContext.getContentResolver(),
+                    Settings.Secure.DOWNLOAD_RECOMMENDED_MAX_BYTES_OVER_MOBILE);
+        } catch (SettingNotFoundException exc) {
+            return null;
+        }
     }
 
     @Override
